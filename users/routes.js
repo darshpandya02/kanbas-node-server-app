@@ -8,7 +8,6 @@ function UserRoutes(app) {
     const status = await dao.deleteUser(req.params.userId);
     res.json(status);
   };
-
   const findAllUsers = async (req, res) => {
     const users = await dao.findAllUsers();
     res.json(users);
